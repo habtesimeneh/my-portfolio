@@ -1,0 +1,227 @@
+/* --- ሙሉውን ኮድ እዚህ ካለው ጋር ተካው --- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  width: 100%;
+  overflow-x: hidden;
+  background-color: #f8f9fa;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Navbar (Header) ሁሌም ጥቁር እንዲሆን */
+.navbar {
+  background-color: #212529 !important; /* የ Bootstrap 'dark' ከለር */
+  border-bottom: 1px solid #333;
+}
+
+/* በናቭባር ላይ ያሉ ጽሁፎች ሁሌም ነጭ እንዲሆኑ */
+.navbar .nav-link, .navbar .navbar-brand {
+  color: #ffffff !important;
+}
+
+/* Dark Mode ሲሆን መላው ገጽ ነጭ ጽሁፍ እንዲኖረው */
+[data-theme='dark'] body {
+  background-color: #121212 !important;
+  color: #ffffff !important;
+}
+
+main { padding-top: 70px; }
+a { text-decoration: none; }
+
+/* Section Backgrounds - Light Mode */
+#home { background-color: #f6f7f9 !important; }
+#about { background-color: #e9e4e4 !important;color: #0d0d0d !important; }
+#skill { background-color: #d1d3d5 !important; }
+#project { background-color: #f3eee893 !important; }
+#contact { background-color: #c6caca !important; }
+
+/* --- Dark Mode Section Colors & Text Fix --- */
+[data-theme='dark'] #home,
+[data-theme='dark'] #about,
+[data-theme='dark'] #skill,
+[data-theme='dark'] #project,
+[data-theme='dark'] #contact,
+[data-theme='dark'] section {
+  background-color: #121212 !important;
+  color: #ffffff !important;
+}
+
+/* በዳርክ ሞድ ጊዜ በሴክሽኑ ውስጥ ያሉ ሁሉንም ጽሁፎች ነጭ ማድረግ */
+[data-theme='dark'] h1, 
+[data-theme='dark'] h2, 
+[data-theme='dark'] h3, 
+[data-theme='dark'] h4, 
+[data-theme='dark'] h5, 
+[data-theme='dark'] p, 
+[data-theme='dark'] span {
+  color: #ffffff !important;
+}
+
+/* Cards */
+.card {
+  border: none !important;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+[data-theme='dark'] .card {
+  background-color: #1e1e1e !important;
+  color: white !important;
+  border: 1px solid #333 !important;
+}
+
+.card:hover { transform: translateY(-8px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+
+/* Typewriter Cursor */
+.Typewriter__cursor {
+  color: #0d6efd;
+  font-weight: bold;
+}
+
+/* Hero Button Fix - ዳርክ ሞድ ሲሆን */
+[data-theme='dark'] .btn-outline-dark {
+    color: #ffffff !important;
+    border-color: #ffffff !important;
+}
+
+[data-theme='dark'] .btn-outline-dark:hover {
+    background-color: #ffffff !important;
+    color: #121212 !important;
+}
+
+/* Privacy Policy Modal Fix */
+[data-theme='dark'] .modal-content {
+    background-color: #1e1e1e !important;
+    color: #ffffff !important;
+}
+
+[data-theme='dark'] .modal-header, 
+[data-theme='dark'] .modal-footer {
+    border-color: #333 !important;
+}
+
+[data-theme='dark'] .modal-body {
+    color: #ffffff !important;
+}
+
+[data-theme='dark'] .btn-close {
+    filter: invert(1) grayscale(100%) brightness(200%);
+}
+
+/* Footer & Socials */
+.footer-socials a {
+  transition: transform 0.3s ease;
+  display: inline-block;
+}
+
+.footer-socials a:hover {
+  transform: translateY(-5px);
+  opacity: 0.8;
+}
+
+/* Smooth Transition */
+body, section, .card, .navbar, p, h1, h2, h3 {
+  transition: all 0.3s ease-in-out;
+}
+
+
+
+/* Hero section ውስጥ ያሉ የሶሻል አይኮን ሊንኮች */
+.social-icons a {
+  display: inline-block;
+  color: #0d6efd; /* ወይም የምትፈልገው ቀለም */
+  margin-right: 15px;
+  font-size: 1.5rem;
+  transition: all 0.3s ease-in-out; /* ለስላሳ እንዲሆን */
+}
+
+/* ማውዝ ሲያርፍባቸው (Hover Effect) */
+.social-icons a:hover {
+  transform: translateY(-8px) scale(1.2); /* ወደ ላይ ከፍ እንዲልና እንዲያብጥ */
+  color: #0056b3; /* ቀለሙ ትንሽ ጠቆር እንዲል */
+  filter: drop-shadow(0 5px 15px rgba(13, 110, 253, 0.4)); /* የብርሃን ጥላ */
+}
+
+/* ዳርክ ሞድ ሲሆን የአይኮኖቹ ቀለም ነጭ እንዲሆን */
+[data-theme='dark'] .social-icons a {
+  color: #ffffff !important;
+}
+
+[data-theme='dark'] .social-icons a:hover {
+  color: #0d6efd !important; /* ዳርክ ሞድ ላይ ሆቨር ሲሆን ወደ ሰማያዊ እንዲቀየር */
+}
+
+
+
+
+
+
+/* ናቭባር ሊንኮች Hover ሲደረጉ */
+.navbar-nav .nav-link {
+  transition: all 0.3s ease; /* ለስላሳ እንቅስቃሴ እንዲኖር */
+  position: relative;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #0d6efd !important; /* የናቭባሩ ሰማያዊ ቀለም */
+  transform: translateY(-2px); /* ትንሽ ወደ ላይ ከፍ እንዲል */
+  font-weight: 600; /* ጽሁፉ ጎላ እንዲል */
+}
+
+/* ከጽሁፉ ስር የምትሰመር ቀጭን መስመር (Underline Animation) */
+.navbar-nav .nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #0d6efd;
+  transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after {
+  width: 100%; /* ማውዝ ሲያርፍበት መስመሩ ተስቦ ይሞላል */
+}
+
+
+
+/* ለፕሮጀክት ካርዶቹ የሚያምር ቦርደር */
+.project-card {
+  border: 1px solid #dee2e6 !important; /* ቀጭን ግራጫ ቦርደር */
+  transition: all 0.3s ease;
+}
+
+/* ማውዝ ሲያርፍበት ቦርደሩ ጎላ እንዲል */
+.project-card:hover {
+  border-color: #0d6efd !important; /* ወደ ሰማያዊ ይቀየራል */
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+}
+
+/* ዳርክ ሞድ ሲሆን የቦርደሩ ቀለም እንዲቀየር */
+[data-theme='dark'] .project-card {
+  border: 1px solid #333 !important;
+}
+
+[data-theme='dark'] .project-card:hover {
+  border-color: #0d6efd !important;
+}
+
+.hover-link {
+  transition: color 0.3s ease, transform 0.3s ease;
+  display: inline-block;
+}
+
+.hover-link:hover {
+  color: #0d6efd !important;
+  transform: translateX(5px);
+}
