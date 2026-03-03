@@ -5,7 +5,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 // Component Imports - እነዚህ ፋይሎች በ components ፎልደር ውስጥ መኖራቸውን አረጋግጥ
-import Header from './components/header';
+import Header from './components/Header';
 import Hero from './components/Hero';
 import About from './components/About';
 import Skill from './components/Skills';
