@@ -2,7 +2,7 @@ import { Navbar, Nav, Container,Button } from 'react-bootstrap';
 
 function Header({ ToggleTheme, currentTheme }) {
   return (
-    // fixed="top" ወደ ላይ ይለጥፈዋል፣ w-100 ደግሞ ሙሉ ስፋት ይሰጠዋል
+    
   <Navbar 
   bg="dark" 
   variant="dark" 
@@ -15,10 +15,10 @@ function Header({ ToggleTheme, currentTheme }) {
 
 
 
-// 2. በ Navbar.Brand ውስጥ እንዲህ ቀይረው
+
 <Navbar.Brand href="#home" className="fw-bold d-flex align-items-center text-white">
   <img
-    src="/favicon.png"  // በቀጥታ በስሙ ብቻ ጥራው
+    src="/favicon.png"  
     alt="Logo"
     width="30"
     height="30"
