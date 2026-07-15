@@ -53,13 +53,13 @@ function Hero() {
 
             
             {/* Social Media Icons - አዲስ የተጨመረ */}
-            <div className="social-icons d-flex gap-4 mt-5">
+            {/* <div className="social-icons d-flex gap-4 mt-5">
               <a href="https://www.facebook.com/hab.tu.400214" target="_blank" rel="noreferrer" className="text-primary"><FaFacebook size={28} /></a>
               <a href="https://t.me/@Habte88" target="_blank" rel="noreferrer" className="text-info"><FaTelegram size={28} /></a>
               <a href="https://instagram.com/your-id" target="_blank" rel="noreferrer" className="text-danger"><FaInstagram size={28} /></a>
               <a href="https://www.youtube.com/@Habtesimeneh" target="_blank" rel="noreferrer" className="text-danger"><FaYoutube size={28} /></a>
               <a href="https://linkedin.com/in/your-id" target="_blank" rel="noreferrer" className="text-primary"><FaLinkedin size={28} /></a>
-            </div>
+            </div> */}
 
           </Col>
 
