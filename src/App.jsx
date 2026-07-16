@@ -36,7 +36,6 @@ function App() {
       once: false,    // ወደ ላይና ወደ ታች ስትል ሁሌም እንዲሰራ
     });
   }, []);
-
   return (
     <div className="App">
       {/* Header - መረጃዎቹን (Props) እዚህ ጋር እንልካለን */}
