@@ -125,6 +125,11 @@ body {
   color: var(--light-text) !important;
 }
 
+[data-theme='light'] .form-control::placeholder {
+  color: #8a857b !important;
+  opacity: 1;
+}
+
 [data-theme='light'] .form-control:focus {
   background-color: #ffffff !important;
   border-color: var(--gold) !important;
@@ -282,6 +287,34 @@ p, span, small, .text-muted, .text-secondary {
   background-color: rgba(201, 162, 39, 0.12) !important;
   color: var(--gold-light) !important;
   border-color: var(--gold-light) !important;
+}
+
+/* Gold outline buttons used by project cards (variant="outline-primary") */
+.btn-outline-primary {
+  color: var(--gold) !important;
+  border-color: var(--gold) !important;
+  transition: all 0.25s ease;
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:focus,
+.btn-outline-primary:active {
+  background-color: rgba(201, 162, 39, 0.12) !important;
+  color: var(--gold-light) !important;
+  border-color: var(--gold-light) !important;
+}
+
+[data-theme='light'] .btn-outline-primary {
+  color: var(--gold-dark) !important;
+  border-color: var(--gold-dark) !important;
+}
+
+[data-theme='light'] .btn-outline-primary:hover,
+[data-theme='light'] .btn-outline-primary:focus,
+[data-theme='light'] .btn-outline-primary:active {
+  background-color: rgba(156, 124, 28, 0.1) !important;
+  color: #8a6d1f !important;
+  border-color: #8a6d1f !important;
 }
 
 /* Badges */
@@ -468,6 +501,11 @@ footer.bg-dark {
   border: 1px solid var(--dark-border) !important;
   color: #e7e3da !important;
   border-radius: 10px;
+}
+
+.form-control::placeholder {
+  color: #9b958a !important;
+  opacity: 1;
 }
 
 .form-control:focus {
