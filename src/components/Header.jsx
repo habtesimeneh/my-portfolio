@@ -1,0 +1,58 @@
+import { Navbar, Nav, Container,Button } from 'react-bootstrap';
+
+function Header({ ToggleTheme, currentTheme }) {
+  return (
+    
+  <Navbar 
+  bg="dark" 
+  variant="dark" 
+  expand="lg" 
+  fixed="top" 
+  className="w-100 shadow"
+>
+      <Container fluid className="px-4"> 
+
+
+
+
+
+<Navbar.Brand href="#home" className="fw-bold d-flex align-items-center text-white">
+  <img
+    src="/favicon.png"  
+    alt="Logo"
+    width="30"
+    height="30"
+    className="me-2 rounded"
+    onError={(e) => { e.target.src = "https://via.placeholder.com/30"; }} // ምስሉ ካልተገኘ placeholder እንዲያሳይ
+  />
+  <span>habtish portfolio</span>
+</Navbar.Brand>
+
+
+
+        
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="ms-auto gap-4">
+            <Nav.Link href="#home" className="mx-2">home</Nav.Link>
+            <Nav.Link href="#about" className="mx-2">about</Nav.Link>
+            <Nav.Link href="#skill" className="mx-2">skill</Nav.Link>
+            <Nav.Link href="#project" className="mx-2">project</Nav.Link>
+            <Nav.Link href="#contact" className="mx-2">contact</Nav.Link>
+            {/* 2. Theme toggle button */}
+          <Button
+            variant={currentTheme === 'light' ? 'outline-dark' : 'outline-light'}
+            onClick={ToggleTheme}
+            className="ms-lg-3 mt-2 mt-lg-0 rounded-pill px-3"
+            aria-label="Toggle theme"
+          >
+            {currentTheme === 'light' ? '🌙 Dark' : '☀️ Light'}
+          </Button>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
+  );
+}
+export default Header;
