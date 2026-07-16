@@ -51,7 +51,7 @@ function App() {
         <div id="project" data-aos="fade-left"><Projects /></div>
         <div id="contact" data-aos="flip-up"><Contact /></div>
       </main>
-<h1>TEST NETLIFY UPDATE</h1>
+
    {/* Footer Section */}
 <footer className="py-5 bg-dark text-primary mt-5">
   <div className="container">
