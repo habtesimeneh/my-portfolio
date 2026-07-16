@@ -93,7 +93,6 @@ function App() {
     </div>
 
     <hr className="bg-secondary opacity-25 w-100 mx-auto mb-4" />
-
     {/* Copyright & Privacy Section (ያንተ የድሮው ኮድ) */}
     <div className="text-center">
       <p className="mb-0 text-secondary small">&copy; 2026 Habtish Portfolio. Built with React.</p>
